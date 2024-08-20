@@ -15,7 +15,7 @@ function App() {
         <>
             <NameContext.Provider value={[name, setName]}>
                 <Input ref={ref} />
-                <Greet name={name} />
+                <Greet />
 
                 <button onClick={onClick}>Wpisz imię!</button>
                 <p>

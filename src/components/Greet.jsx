@@ -1,13 +1,11 @@
-import PropTypes from "prop-types";
+import { useContext } from "react";
+import { NameContext } from "../contexts/nameContext";
 
-export function Greet({ name }) {
+export function Greet() {
+    const [name] = useContext(NameContext);
     return (
         <p>
             Cześć <b>{name}</b>{" "}
         </p>
     );
 }
-
-Greet.propTypes = {
-    name: PropTypes.string,
-};
