@@ -13,7 +13,7 @@ function App() {
 
     return (
         <>
-            <NameContext.Provider value={[name, setName]}>
+            <NameContext value={[name, setName]}>
                 <Input ref={ref} />
                 <Greet name={name} />
 
@@ -21,7 +21,7 @@ function App() {
                 <p>
                     Projekt korzysta z <b>React {version}</b>
                 </p>
-            </NameContext.Provider>
+            </NameContext>
         </>
     );
 }

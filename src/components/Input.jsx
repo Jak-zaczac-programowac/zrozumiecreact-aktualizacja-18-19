@@ -1,8 +1,8 @@
-import { forwardRef, useContext } from "react";
+import { use } from "react";
 import { NameContext } from "../contexts/nameContext";
 
-export const Input = forwardRef(function Input(props, ref) {
-    const [, setName] = useContext(NameContext);
+export const Input = function Input({ ref }) {
+    const [, setName] = use(NameContext);
 
     return (
         <input
@@ -13,4 +13,4 @@ export const Input = forwardRef(function Input(props, ref) {
             }}
         />
     );
-});
+};
