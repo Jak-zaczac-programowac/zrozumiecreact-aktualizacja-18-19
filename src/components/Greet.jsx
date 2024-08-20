@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 export function Greet({ name }) {
     return (
         <p>
@@ -7,7 +5,3 @@ export function Greet({ name }) {
         </p>
     );
 }
-
-Greet.propTypes = {
-    name: PropTypes.string,
-};

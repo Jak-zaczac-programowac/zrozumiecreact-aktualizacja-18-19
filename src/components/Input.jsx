@@ -2,7 +2,7 @@ import { forwardRef, useContext } from "react";
 import { NameContext } from "../contexts/nameContext";
 
 export const Input = forwardRef(function Input(props, ref) {
-    const [name, setName] = useContext(NameContext);
+    const [, setName] = useContext(NameContext);
 
     return (
         <input
